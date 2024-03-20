@@ -9,7 +9,6 @@ import morgan from "morgan"
 // import clientRouter from clientRouter
 
 // config 
-
 dotenv.config()
 const app = express()
 app.use(express.json())
@@ -22,6 +21,7 @@ app.use(morgan('common'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(cors())
+
 
 
 // Routes
